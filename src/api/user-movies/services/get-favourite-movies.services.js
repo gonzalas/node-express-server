@@ -12,6 +12,7 @@ const prepareResponse = async (devices, id) => {
   const { data } = await getMoviesFromUser(id);
   const { movies } = data;
   const favouriteMovies = getFavouriteMovies(movies);
+
   return devices.map((device) => {
     const moviesInDevice = [];
 

@@ -4,10 +4,9 @@ const { API_KEY, API_URL } = require('../../../config');
 module.exports = {
     externalRequest = () => {
         return axios.create({
-            baseURL:'',
+            baseURL: API_URL,
             headers: {
-                API_KEY,
-                API_URL
+                'authorization': API_KEY,
             }
         });
     }
