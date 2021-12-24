@@ -7,13 +7,15 @@
     "develop": "nodemon src/index.js --exec babel-node",
     "start": "node dist/index.js",
     "build": "babel src --out-dir dist",
-    "debug": "node inspect src/index.js"
+    "debug": "node inspect src/index.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "axios": "^0.24.0",
     "body-parser": "^1.19.1",
     "core-js": "^3.20.0",
     "express": "^4.17.2",
@@ -26,6 +28,7 @@
     "@babel/node": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
     "dotenv": "^10.0.0",
+    "jest": "^27.4.5",
     "nodemon": "^2.0.15",
     "prettier": "2.5.1"
   }
